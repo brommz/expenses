@@ -8,7 +8,7 @@ fi
 
 git add .
 git commit -m "$1"
-git push origin master
+# git push origin master
 
 REACT_APP_SHEET_ID=1DEBrE6KXBxdAaWnWfS-e0u2aFawrephhzmH81Ne5sxw npm run build
 
