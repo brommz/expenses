@@ -10,21 +10,13 @@ git add .
 git commit -m "$1"
 git push origin master
 
-# expenses.chodounsky.net
-REACT_APP_SHEET_ID=18uwYwUAVw0H5bhszMgAORmvAN2APxAtJI3FB-XH7Dzk npm run build
+REACT_APP_SHEET_ID=1DEBrE6KXBxdAaWnWfS-e0u2aFawrephhzmH81Ne5sxw npm run build
+
+# github pages
+npm run build
 cp -a build/. production/
 cd production
 git add .
 git commit -m "$1"
-git push origin production
-cd ..
-
-# github pages
-
-npm run build
-cp -a build/. demo/
-cd demo
-git add .
-git commit -m "$1"
-git push origin gh-pages
+git push origin feature/github-pages
 cd ..
