@@ -10,7 +10,7 @@
     "static/js/2.fa8636d4.chunk.js.map": "/expenses/static/js/2.fa8636d4.chunk.js.map",
     "index.html": "/index.html",
     "precache-manifest.5271a9ab2d8bc9f2adedba115d5c1ba5.js": "/precache-manifest.5271a9ab2d8bc9f2adedba115d5c1ba5.js",
-    "service-worker.js": "/service-worker.js",
+    "service-worker.js": "/expenses/service-worker.js",
     "static/css/2.7ac39a5d.chunk.css.map": "/expenses/static/css/2.7ac39a5d.chunk.css.map",
     "static/css/main.4d4eb2ea.chunk.css.map": "/expenses/static/css/main.4d4eb2ea.chunk.css.map",
     "static/js/2.fa8636d4.chunk.js.LICENSE.txt": "/expenses/static/js/2.fa8636d4.chunk.js.LICENSE.txt"
