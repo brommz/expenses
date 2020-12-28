@@ -2,6 +2,7 @@
   "name": "expenses",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "material-components-web": "^0.12.1",
     "material-icons": "^0.1.0",
