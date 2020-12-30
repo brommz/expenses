@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { MDCTextfield } from "@material/textfield/dist/mdc.textfield.js";
 import { MDCDialog } from "@material/dialog/dist/mdc.dialog.js";
+import Select from 'react-select'
 
 import "@material/form-field/dist/mdc.form-field.css";
 import "@material/select/dist/mdc.select.css";
@@ -19,10 +20,20 @@ class ExpenseForm extends Component {
 
     handleInputChange = (event) => {
         const target = event.target;
-
         target.reportValidity();
         this.setState({ isValid: this.form.checkValidity() });
         this.props.onChange(target.name, target.value);
+    }
+
+    handleCategoryChange = (event) => {
+        const value = event.value;
+        if (!value) {
+            throw 'Category cannot be empty';
+        }
+        this.setState({ isValid: this.form.checkValidity() });
+        this.props['expense']['category'] = value;
+        this.props['expense']['topic'] = 'topic-mock';
+        this.props['expense']['icon'] = 'face';
     }
 
     componentDidMount() {
@@ -59,8 +70,8 @@ class ExpenseForm extends Component {
         }
         const parts = date.split('/');
         const year = +parts[2] + 2000;
-        const month = parts[1].length < 2 ? `0${parts[1]}`: parts[1];
-        const day = parts[0].length < 2 ? `0${parts[0]}`: parts[0];
+        const month = parts[1].length < 2 ? `0${parts[1]}` : parts[1];
+        const day = parts[0].length < 2 ? `0${parts[0]}` : parts[0];
         return `${year}-${month}-${day}`;
     }
 
@@ -119,17 +130,12 @@ class ExpenseForm extends Component {
                 </div>
 
                 <div className="mdc-form-field">
-                    <select
+                    <Select
                         name="category"
-                        className="mdc-select"
-                        value={this.props.expense.category}
-                        onChange={this.handleInputChange}
-                        required
-                    >
-                        {this.props.categories.map(category =>
-                            <option value={category} key={category}>{category}</option>
-                        )}
-                    </select>
+                        value={({ value: this.props.expense.category, label: this.props.expense.category })}
+                        onChange={this.handleCategoryChange}
+                        options={this.props.categories.map(c => ({ value: c, label: c }))}
+                    />
                 </div>
 
                 <div className="mdc-form-field">
