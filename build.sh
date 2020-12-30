@@ -1,4 +1,7 @@
-#!/bin/sh
+export REACT_APP_SHEET_ID=1Z-1RXh51c74cw4KMzuSfZ_8NZ34qbNz0McOZMLOyOrY 
+export REACT_CLIENT_ID=758679234250-t9fh8t8ph9pssqb5kekseinfgout8f9i 
+echo $REACT_APP_SHEET_ID
+echo $REACT_CLIENT_ID
 
-REACT_APP_SHEET_ID=1DEBrE6KXBxdAaWnWfS-e0u2aFawrephhzmH81Ne5sxw npm run build
+npm run build
 cp -a build/. docs/
