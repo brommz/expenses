@@ -14,17 +14,17 @@ export default class ExpenseCategory extends Component {
 
                 {p.data.label}
             </Option>
-        )
+        );
 
         this.customSelectValue = props => (
             <div>
                 <i className="material-icons" aria-hidden="true">
                     {props.data.icon || 'attach_money'}
                 </i>
-                
+
                 {props.data.label}
             </div>
-        )
+        );
     }
     render() {
         return (
