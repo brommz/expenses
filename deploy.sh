@@ -15,5 +15,5 @@ git commit -m "$1"
 ./build.sh
 git add .
 git commit -m "$1"
-git push origin feature/github-pages
+git push origin feature/github-pages-prod
 cd ..
