@@ -311,6 +311,8 @@ class App extends Component {
             return (
                 <ExpenseForm
                     categories={this.state.categories}
+                    icons={this.state.icons}
+                    topics={this.state.topics}
                     accounts={this.state.accounts}
                     expense={this.state.expense}
                     onSubmit={this.handleExpenseSubmit}

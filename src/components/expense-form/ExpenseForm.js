@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { MDCTextfield } from "@material/textfield/dist/mdc.textfield.js";
 import { MDCDialog } from "@material/dialog/dist/mdc.dialog.js";
-import Select from 'react-select'
 
 import "@material/form-field/dist/mdc.form-field.css";
 import "@material/select/dist/mdc.select.css";
@@ -10,6 +9,7 @@ import "@material/button/dist/mdc.button.css";
 import "@material/dialog/dist/mdc.dialog.css";
 
 import "./ExpenseForm.css";
+import ExpenseCategory from "./ExpenseCategory";
 
 class ExpenseForm extends Component {
     constructor(props) {
@@ -47,6 +47,7 @@ class ExpenseForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
+        this.props['expense']['date'] = this.parseDate(this.props['expense']['date']);
         this.props.onSubmit();
     }
 
@@ -130,11 +131,11 @@ class ExpenseForm extends Component {
                 </div>
 
                 <div className="mdc-form-field">
-                    <Select
+                    <ExpenseCategory
                         name="category"
-                        value={({ value: this.props.expense.category, label: this.props.expense.category })}
+                        value={({ value: this.props.expense.category, label: this.props.expense.category, icon: this.props.icons[this.props.expense.category], topic: this.props.topics[this.props.expense.category] })}
                         onChange={this.handleCategoryChange}
-                        options={this.props.categories.map(c => ({ value: c, label: c }))}
+                        options={this.props.categories.map(c => ({ value: c, label: c, icon: this.props.icons[c], topic: this.props.topics[c] }))}
                     />
                 </div>
 
