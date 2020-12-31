@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "https://brommz.github.io/expenses/static/css/main.4d4eb2ea.chunk.css",
+    "main.js": "https://brommz.github.io/expenses/static/js/main.c3c7ccd4.chunk.js",
+    "main.js.map": "https://brommz.github.io/expenses/static/js/main.c3c7ccd4.chunk.js.map",
+    "runtime-main.js": "https://brommz.github.io/expenses/static/js/runtime-main.07baa3c1.js",
+    "runtime-main.js.map": "https://brommz.github.io/expenses/static/js/runtime-main.07baa3c1.js.map",
+    "static/css/2.38030236.chunk.css": "https://brommz.github.io/expenses/static/css/2.38030236.chunk.css",
+    "static/js/2.fa3c59af.chunk.js": "https://brommz.github.io/expenses/static/js/2.fa3c59af.chunk.js",
+    "static/js/2.fa3c59af.chunk.js.map": "https://brommz.github.io/expenses/static/js/2.fa3c59af.chunk.js.map",
+    "index.html": "https://brommz.github.io/expenses/index.html",
+    "precache-manifest.7bbd4ee1d54cc69ce002f58df78c0e6b.js": "https://brommz.github.io/expenses/precache-manifest.7bbd4ee1d54cc69ce002f58df78c0e6b.js",
+    "service-worker.js": "https://brommz.github.io/expenses/service-worker.js",
+    "static/css/2.38030236.chunk.css.map": "https://brommz.github.io/expenses/static/css/2.38030236.chunk.css.map",
+    "static/css/main.4d4eb2ea.chunk.css.map": "https://brommz.github.io/expenses/static/css/main.4d4eb2ea.chunk.css.map",
+    "static/js/2.fa3c59af.chunk.js.LICENSE.txt": "https://brommz.github.io/expenses/static/js/2.fa3c59af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07baa3c1.js",
+    "static/css/2.38030236.chunk.css",
+    "static/js/2.fa3c59af.chunk.js",
+    "static/css/main.4d4eb2ea.chunk.css",
+    "static/js/main.c3c7ccd4.chunk.js"
+  ]
+}
