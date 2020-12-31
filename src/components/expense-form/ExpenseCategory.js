@@ -6,13 +6,13 @@ export default class ExpenseCategory extends Component {
         super(componentProps);
 
         const { Option } = components
-        this.customSelectOption = p => (
-            <Option {...p}>
+        this.customSelectOption = props => (
+            <Option {...props}>
                 <i className="material-icons" aria-hidden="true">
-                    {p.data.icon || 'attach_money'}
+                    {props.data.icon || 'attach_money'}
                 </i>
 
-                {p.data.label}
+                {props.data.label} ({props.data.topic})
             </Option>
         );
 
@@ -22,9 +22,11 @@ export default class ExpenseCategory extends Component {
                     {props.data.icon || 'attach_money'}
                 </i>
 
-                {props.data.label}
+                {props.data.label} ({props.data.topic})
             </div>
         );
+
+
     }
     render() {
         return (
@@ -33,7 +35,12 @@ export default class ExpenseCategory extends Component {
                 onChange={this.props.onChange}
                 options={this.props.options}
                 components={{ Option: this.customSelectOption, SingleValue: this.customSelectValue }}
+                filterOption={this.customFilter}
             />
         );
+    }
+
+    customFilter(option, searchText) {
+        return option.data.value.toLowerCase().includes(searchText.toLowerCase()) || option.data.topic.toLowerCase().includes(searchText.toLowerCase());
     }
 }
