@@ -28,7 +28,7 @@ class ExpenseForm extends Component {
     handleCategoryChange = (event) => {
         const value = event.value;
         if (!value) {
-            throw 'Category cannot be empty';
+            throw new Error('Category cannot be empty');
         }
         this.setState({ isValid: this.form.checkValidity() });
         this.props['expense']['category'] = value;

@@ -17,3 +17,5 @@ git add .
 git commit -m "$1"
 git push origin feature/github-pages-prod
 cd ..
+
+# python3 -m http.server 8080
