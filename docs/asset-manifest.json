@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d4eb2ea.chunk.css",
-    "main.js": "/static/js/main.9a797fcf.chunk.js",
-    "main.js.map": "/static/js/main.9a797fcf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.87bd3ca5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.87bd3ca5.js.map",
-    "static/css/2.38030236.chunk.css": "/static/css/2.38030236.chunk.css",
-    "static/js/2.fa3c59af.chunk.js": "/static/js/2.fa3c59af.chunk.js",
-    "static/js/2.fa3c59af.chunk.js.map": "/static/js/2.fa3c59af.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3c86c1672908476a402bec7fc3b28a98.js": "/precache-manifest.3c86c1672908476a402bec7fc3b28a98.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.38030236.chunk.css.map": "/static/css/2.38030236.chunk.css.map",
-    "static/css/main.4d4eb2ea.chunk.css.map": "/static/css/main.4d4eb2ea.chunk.css.map",
-    "static/js/2.fa3c59af.chunk.js.LICENSE.txt": "/static/js/2.fa3c59af.chunk.js.LICENSE.txt"
+    "main.css": "https://brommz.github.io/expenses/static/css/main.4d4eb2ea.chunk.css",
+    "main.js": "https://brommz.github.io/expenses/static/js/main.abcfb4b4.chunk.js",
+    "main.js.map": "https://brommz.github.io/expenses/static/js/main.abcfb4b4.chunk.js.map",
+    "runtime-main.js": "https://brommz.github.io/expenses/static/js/runtime-main.07baa3c1.js",
+    "runtime-main.js.map": "https://brommz.github.io/expenses/static/js/runtime-main.07baa3c1.js.map",
+    "static/css/2.38030236.chunk.css": "https://brommz.github.io/expenses/static/css/2.38030236.chunk.css",
+    "static/js/2.fa3c59af.chunk.js": "https://brommz.github.io/expenses/static/js/2.fa3c59af.chunk.js",
+    "static/js/2.fa3c59af.chunk.js.map": "https://brommz.github.io/expenses/static/js/2.fa3c59af.chunk.js.map",
+    "index.html": "https://brommz.github.io/expenses/index.html",
+    "precache-manifest.fe1ebeaf68565c8a4bdeace8c53218e7.js": "https://brommz.github.io/expenses/precache-manifest.fe1ebeaf68565c8a4bdeace8c53218e7.js",
+    "service-worker.js": "https://brommz.github.io/expenses/service-worker.js",
+    "static/css/2.38030236.chunk.css.map": "https://brommz.github.io/expenses/static/css/2.38030236.chunk.css.map",
+    "static/css/main.4d4eb2ea.chunk.css.map": "https://brommz.github.io/expenses/static/css/main.4d4eb2ea.chunk.css.map",
+    "static/js/2.fa3c59af.chunk.js.LICENSE.txt": "https://brommz.github.io/expenses/static/js/2.fa3c59af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.87bd3ca5.js",
+    "static/js/runtime-main.07baa3c1.js",
     "static/css/2.38030236.chunk.css",
     "static/js/2.fa3c59af.chunk.js",
     "static/css/main.4d4eb2ea.chunk.css",
-    "static/js/main.9a797fcf.chunk.js"
+    "static/js/main.abcfb4b4.chunk.js"
   ]
 }
